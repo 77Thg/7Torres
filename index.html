@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>7Torres | Produtos Diversos</title>
+<meta name="description" content="Catálogo online da 7Torres com atendimento direto pelo WhatsApp.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,16 +12,18 @@
   <div class="container top-inner">
     <img class="logo" src="imagens/logo-7torres.png" alt="7Torres">
     <input id="search" type="search" placeholder="Buscar produtos...">
-    <a class="contact" href="https://wa.me/5561993580318" target="_blank">61 99358-0318</a>
+    <a class="contact" href="https://wa.me/5561993580318" target="_blank" rel="noopener">61 99358-0318</a>
   </div>
 </header>
 
 <nav class="filters">
   <div class="container">
     <button class="active" data-filter="todos">Todos</button>
+    <button data-filter="áudio">Áudio</button>
+    <button data-filter="energia">Energia</button>
     <button data-filter="carregadores">Carregadores</button>
     <button data-filter="cabos">Cabos</button>
-    <button data-filter="energia">Energia</button>
+    <button data-filter="automotivo">Automotivo</button>
     <button data-filter="acessórios">Acessórios</button>
   </div>
 </nav>
@@ -36,68 +39,163 @@
 
   <section class="grid">
     
+    <article class="card" data-name="power bank magnético 10.000mah" data-category="energia">
+      <div class="img-wrap">
+        <span class="tag">Energia</span>
+        <img src="imagens/powerbank.png" alt="Power Bank Magnético 10.000mAh" loading="lazy">
+      </div>
+      <div class="content">
+        <h3>Power Bank Magnético 10.000mAh</h3>
+        <ul><li>Carregamento sem fio</li><li>Capacidade de 10.000mAh</li><li>Compacto e portátil</li></ul>
+        <div class="price">R$ 89,99</div>
+        <a class="buy" target="_blank" rel="noopener"
+           href="https://wa.me/5561993580318?text=Ol%C3%A1%2C%207Torres%21%20Tenho%20interesse%20no%20produto%20Power%20Bank%20Magn%C3%A9tico%2010.000mAh%20por%20R%24%2089%2C99.%20Est%C3%A1%20dispon%C3%ADvel%3F">
+           Comprar pelo WhatsApp
+        </a>
+      </div>
+    </article>
+    
+    <article class="card" data-name="fone gamer m28 headset" data-category="áudio">
+      <div class="img-wrap">
+        <span class="tag">Áudio</span>
+        <img src="imagens/fone-m28.png" alt="Fone Gamer M28 Headset" loading="lazy">
+      </div>
+      <div class="content">
+        <h3>Fone Gamer M28 Headset</h3>
+        <ul><li>Modo gamer e baixa latência</li><li>Som estéreo Hi-Fi</li><li>Microfone HD</li></ul>
+        <div class="price">R$ 59,99</div>
+        <a class="buy" target="_blank" rel="noopener"
+           href="https://wa.me/5561993580318?text=Ol%C3%A1%2C%207Torres%21%20Tenho%20interesse%20no%20produto%20Fone%20Gamer%20M28%20Headset%20por%20R%24%2059%2C99.%20Est%C3%A1%20dispon%C3%ADvel%3F">
+           Comprar pelo WhatsApp
+        </a>
+      </div>
+    </article>
+    
+    <article class="card" data-name="inflador de pneus portátil" data-category="automotivo">
+      <div class="img-wrap">
+        <span class="tag">Automotivo</span>
+        <img src="imagens/inflador.png" alt="Inflador de Pneus Portátil" loading="lazy">
+      </div>
+      <div class="content">
+        <h3>Inflador de Pneus Portátil</h3>
+        <ul><li>Display digital</li><li>Bateria recarregável</li><li>Luz LED integrada</li></ul>
+        <div class="price">R$ 164,99</div>
+        <a class="buy" target="_blank" rel="noopener"
+           href="https://wa.me/5561993580318?text=Ol%C3%A1%2C%207Torres%21%20Tenho%20interesse%20no%20produto%20Inflador%20de%20Pneus%20Port%C3%A1til%20por%20R%24%20164%2C99.%20Est%C3%A1%20dispon%C3%ADvel%3F">
+           Comprar pelo WhatsApp
+        </a>
+      </div>
+    </article>
+    
+    <article class="card" data-name="fone de ouvido bluetooth" data-category="áudio">
+      <div class="img-wrap">
+        <span class="tag">Áudio</span>
+        <img src="imagens/fone-bluetooth.png" alt="Fone de Ouvido Bluetooth" loading="lazy">
+      </div>
+      <div class="content">
+        <h3>Fone de Ouvido Bluetooth</h3>
+        <ul><li>Bluetooth 5.0</li><li>Até 10 horas de bateria</li><li>Microfone integrado</li></ul>
+        <div class="price">R$ 169,99</div>
+        <a class="buy" target="_blank" rel="noopener"
+           href="https://wa.me/5561993580318?text=Ol%C3%A1%2C%207Torres%21%20Tenho%20interesse%20no%20produto%20Fone%20de%20Ouvido%20Bluetooth%20por%20R%24%20169%2C99.%20Est%C3%A1%20dispon%C3%ADvel%3F">
+           Comprar pelo WhatsApp
+        </a>
+      </div>
+    </article>
+    
+    <article class="card" data-name="fone bluetooth sem fio" data-category="áudio">
+      <div class="img-wrap">
+        <span class="tag">Áudio</span>
+        <img src="imagens/fone-bluetooth-sem-fio.png" alt="Fone Bluetooth Sem Fio" loading="lazy">
+      </div>
+      <div class="content">
+        <h3>Fone Bluetooth Sem Fio</h3>
+        <ul><li>Bluetooth 5.3</li><li>Microfone embutido</li><li>Acompanha case carregadora</li></ul>
+        <div class="price">R$ 34,99</div>
+        <a class="buy" target="_blank" rel="noopener"
+           href="https://wa.me/5561993580318?text=Ol%C3%A1%2C%207Torres%21%20Tenho%20interesse%20no%20produto%20Fone%20Bluetooth%20Sem%20Fio%20por%20R%24%2034%2C99.%20Est%C3%A1%20dispon%C3%ADvel%3F">
+           Comprar pelo WhatsApp
+        </a>
+      </div>
+    </article>
+    
     <article class="card" data-name="carregador turbo 2.1a" data-category="carregadores">
       <div class="img-wrap">
         <span class="tag">Carregadores</span>
-        <img src="imagens/carregador-turbo-2-1a.png" alt="Carregador Turbo 2.1A">
+        <img src="imagens/carregador-turbo-2-1a.png" alt="Carregador Turbo 2.1A" loading="lazy">
       </div>
       <div class="content">
         <h3>Carregador Turbo 2.1A</h3>
         <ul><li>Carregamento turbo 2.1A</li><li>Proteção inteligente</li><li>Compatibilidade universal</li><li>Cabo incluso</li></ul>
         <div class="price">R$ 39,99</div>
-        <a class="buy" target="_blank" href="https://wa.me/5561993580318?text=Ol%C3%A1%2C%207Torres%21%20Tenho%20interesse%20no%20produto%20Carregador%20Turbo%202.1A%20por%20R%24%2039%2C99.%20Est%C3%A1%20dispon%C3%ADvel%3F">Comprar pelo WhatsApp</a>
+        <a class="buy" target="_blank" rel="noopener"
+           href="https://wa.me/5561993580318?text=Ol%C3%A1%2C%207Torres%21%20Tenho%20interesse%20no%20produto%20Carregador%20Turbo%202.1A%20por%20R%24%2039%2C99.%20Est%C3%A1%20dispon%C3%ADvel%3F">
+           Comprar pelo WhatsApp
+        </a>
       </div>
     </article>
     
     <article class="card" data-name="carregador turbo 3usb" data-category="carregadores">
       <div class="img-wrap">
         <span class="tag">Carregadores</span>
-        <img src="imagens/carregador-turbo-3usb.png" alt="Carregador Turbo 3USB">
+        <img src="imagens/carregador-turbo-3usb.png" alt="Carregador Turbo 3USB" loading="lazy">
       </div>
       <div class="content">
         <h3>Carregador Turbo 3USB</h3>
         <ul><li>3 entradas USB</li><li>Cabo fixo resistente</li><li>Bivolt 100–240V</li><li>Compacto e leve</li></ul>
         <div class="price">R$ 29,99</div>
-        <a class="buy" target="_blank" href="https://wa.me/5561993580318?text=Ol%C3%A1%2C%207Torres%21%20Tenho%20interesse%20no%20produto%20Carregador%20Turbo%203USB%20por%20R%24%2029%2C99.%20Est%C3%A1%20dispon%C3%ADvel%3F">Comprar pelo WhatsApp</a>
+        <a class="buy" target="_blank" rel="noopener"
+           href="https://wa.me/5561993580318?text=Ol%C3%A1%2C%207Torres%21%20Tenho%20interesse%20no%20produto%20Carregador%20Turbo%203USB%20por%20R%24%2029%2C99.%20Est%C3%A1%20dispon%C3%ADvel%3F">
+           Comprar pelo WhatsApp
+        </a>
       </div>
     </article>
     
     <article class="card" data-name="cabo usb micro v8" data-category="cabos">
       <div class="img-wrap">
         <span class="tag">Cabos</span>
-        <img src="imagens/cabo-usb-micro-v8.png" alt="Cabo USB Micro V8">
+        <img src="imagens/cabo-usb-micro-v8.png" alt="Cabo USB Micro V8" loading="lazy">
       </div>
       <div class="content">
         <h3>Cabo USB Micro V8</h3>
         <ul><li>Carregamento rápido</li><li>Transferência de dados</li><li>Material resistente</li><li>Conexão segura</li></ul>
         <div class="price">R$ 29,99</div>
-        <a class="buy" target="_blank" href="https://wa.me/5561993580318?text=Ol%C3%A1%2C%207Torres%21%20Tenho%20interesse%20no%20produto%20Cabo%20USB%20Micro%20V8%20por%20R%24%2029%2C99.%20Est%C3%A1%20dispon%C3%ADvel%3F">Comprar pelo WhatsApp</a>
+        <a class="buy" target="_blank" rel="noopener"
+           href="https://wa.me/5561993580318?text=Ol%C3%A1%2C%207Torres%21%20Tenho%20interesse%20no%20produto%20Cabo%20USB%20Micro%20V8%20por%20R%24%2029%2C99.%20Est%C3%A1%20dispon%C3%ADvel%3F">
+           Comprar pelo WhatsApp
+        </a>
       </div>
     </article>
     
     <article class="card" data-name="mini power bank 10.000mah" data-category="energia">
       <div class="img-wrap">
         <span class="tag">Energia</span>
-        <img src="imagens/mini-power-bank.png" alt="Mini Power Bank 10.000mAh">
+        <img src="imagens/mini-power-bank.png" alt="Mini Power Bank 10.000mAh" loading="lazy">
       </div>
       <div class="content">
         <h3>Mini Power Bank 10.000mAh</h3>
         <ul><li>Capacidade de 10.000mAh</li><li>Carregamento rápido</li><li>Compacto e leve</li><li>Cabo integrado</li></ul>
         <div class="price">R$ 75,00</div>
-        <a class="buy" target="_blank" href="https://wa.me/5561993580318?text=Ol%C3%A1%2C%207Torres%21%20Tenho%20interesse%20no%20produto%20Mini%20Power%20Bank%2010.000mAh%20por%20R%24%2075%2C00.%20Est%C3%A1%20dispon%C3%ADvel%3F">Comprar pelo WhatsApp</a>
+        <a class="buy" target="_blank" rel="noopener"
+           href="https://wa.me/5561993580318?text=Ol%C3%A1%2C%207Torres%21%20Tenho%20interesse%20no%20produto%20Mini%20Power%20Bank%2010.000mAh%20por%20R%24%2075%2C00.%20Est%C3%A1%20dispon%C3%ADvel%3F">
+           Comprar pelo WhatsApp
+        </a>
       </div>
     </article>
     
     <article class="card" data-name="clip anti-ruído para nariz" data-category="acessórios">
       <div class="img-wrap">
         <span class="tag">Acessórios</span>
-        <img src="imagens/clip-anti-ruido.png" alt="Clip Anti-Ruído para Nariz">
+        <img src="imagens/clip-anti-ruido.png" alt="Clip Anti-Ruído para Nariz" loading="lazy">
       </div>
       <div class="content">
         <h3>Clip Anti-Ruído para Nariz</h3>
         <ul><li>Ajuda a abrir as vias nasais</li><li>Pode melhorar o sono</li><li>Silicone macio</li><li>Estojo compacto</li></ul>
         <div class="price">R$ 14,99</div>
-        <a class="buy" target="_blank" href="https://wa.me/5561993580318?text=Ol%C3%A1%2C%207Torres%21%20Tenho%20interesse%20no%20produto%20Clip%20Anti-Ru%C3%ADdo%20para%20Nariz%20por%20R%24%2014%2C99.%20Est%C3%A1%20dispon%C3%ADvel%3F">Comprar pelo WhatsApp</a>
+        <a class="buy" target="_blank" rel="noopener"
+           href="https://wa.me/5561993580318?text=Ol%C3%A1%2C%207Torres%21%20Tenho%20interesse%20no%20produto%20Clip%20Anti-Ru%C3%ADdo%20para%20Nariz%20por%20R%24%2014%2C99.%20Est%C3%A1%20dispon%C3%ADvel%3F">
+           Comprar pelo WhatsApp
+        </a>
       </div>
     </article>
     
@@ -106,7 +204,7 @@
   <p id="empty" hidden>Nenhum produto encontrado.</p>
 </main>
 
-<a class="float" href="https://wa.me/5561993580318" target="_blank">WhatsApp</a>
+<a class="float" href="https://wa.me/5561993580318" target="_blank" rel="noopener">WhatsApp</a>
 
 <footer>
   <div class="container footer-inner">
