@@ -721,3 +721,399 @@ footer{
     font-size:8px;
   }
 }
+
+
+/* ============================
+   7TORRES V2 — DIA 3
+   EXPERIÊNCIA MOBILE FIRST
+   ============================ */
+
+.mobile-quickbar{
+  display:none;
+}
+
+/* Tablet */
+@media(max-width:900px){
+  body{
+    padding-bottom:74px;
+  }
+
+  .container{
+    width:min(94%,1180px);
+  }
+
+  .top{
+    position:sticky;
+    top:0;
+    z-index:40;
+  }
+
+  .top-inner{
+    min-height:auto;
+    padding:10px 0 12px;
+    gap:12px;
+  }
+
+  .logo{
+    width:235px;
+    height:58px;
+  }
+
+  .contact{
+    padding:10px 13px;
+    font-size:12px;
+  }
+
+  .top input{
+    min-height:46px;
+    font-size:16px;
+  }
+
+  .filters{
+    position:sticky;
+    top:82px;
+    z-index:35;
+    background:rgba(8,8,8,.94);
+    backdrop-filter:blur(14px);
+  }
+
+  .filters .container{
+    padding:9px 0;
+    scroll-snap-type:x proximity;
+    scrollbar-width:none;
+  }
+
+  .filters .container::-webkit-scrollbar{
+    display:none;
+  }
+
+  .filters button{
+    scroll-snap-align:start;
+    min-height:40px;
+    padding:9px 14px;
+  }
+
+  .hero-v2{
+    padding:24px 0 34px;
+  }
+
+  .hero-v2-inner{
+    gap:18px;
+  }
+
+  .hero-v2-copy{
+    padding:6px 0 0;
+  }
+
+  .hero-v2-kicker{
+    margin-bottom:13px;
+    font-size:10px;
+    letter-spacing:1.7px;
+  }
+
+  .hero-v2-copy h1{
+    max-width:100%;
+    font-size:clamp(36px,8vw,52px);
+    line-height:1.05;
+  }
+
+  .hero-v2-copy p{
+    margin:16px 0 20px;
+    font-size:15px;
+    line-height:1.6;
+  }
+
+  .hero-v2-actions{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    width:100%;
+  }
+
+  .hero-v2-primary,
+  .hero-v2-secondary{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:48px;
+    padding:12px 14px;
+    font-size:13px;
+  }
+
+  .hero-v2-points{
+    gap:10px 14px;
+    margin-top:18px;
+    font-size:11px;
+  }
+
+  .hero-v2-showcase{
+    min-height:350px;
+  }
+
+  main{
+    padding-top:42px;
+  }
+
+  .title-row{
+    margin-bottom:20px;
+  }
+
+  .title-row h1{
+    font-size:36px;
+  }
+
+  .catalog-subtitle{
+    font-size:13px;
+  }
+
+  .whatsapp-float{
+    display:none;
+  }
+
+  .mobile-quickbar{
+    position:fixed;
+    left:10px;
+    right:10px;
+    bottom:10px;
+    z-index:60;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:7px;
+    padding:7px;
+    border:1px solid rgba(255,255,255,.11);
+    border-radius:18px;
+    background:rgba(10,10,10,.94);
+    box-shadow:0 18px 44px rgba(0,0,0,.48);
+    backdrop-filter:blur(16px);
+  }
+
+  .mobile-quickbar a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:44px;
+    border-radius:12px;
+    color:#d8d3ca;
+    font-size:11px;
+    font-weight:800;
+  }
+
+  .mobile-quickbar a:last-child{
+    background:linear-gradient(135deg,#36af55,#1d7634);
+    color:white;
+  }
+
+  footer{
+    padding-bottom:100px;
+  }
+}
+
+/* Celular */
+@media(max-width:600px){
+  .container{
+    width:94%;
+  }
+
+  body{
+    overflow-x:hidden;
+  }
+
+  .top-inner{
+    display:grid;
+    grid-template-columns:1fr auto;
+    align-items:center;
+  }
+
+  .logo{
+    width:205px;
+    height:52px;
+  }
+
+  .contact{
+    display:none;
+  }
+
+  .top input{
+    grid-column:1/-1;
+    order:3;
+    width:100%;
+    min-height:48px;
+    border-radius:14px;
+    padding:13px 15px;
+  }
+
+  .filters{
+    top:122px;
+  }
+
+  .filters button{
+    font-size:11px;
+  }
+
+  .hero-v2{
+    padding-top:18px;
+  }
+
+  .hero-v2-copy h1{
+    font-size:40px;
+    letter-spacing:-1.1px;
+  }
+
+  .hero-v2-actions{
+    grid-template-columns:1fr;
+  }
+
+  .hero-v2-primary,
+  .hero-v2-secondary{
+    width:100%;
+  }
+
+  .hero-v2-points{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:8px;
+  }
+
+  .hero-v2-showcase{
+    min-height:305px;
+    margin-top:4px;
+  }
+
+  .showcase-main{
+    width:88%;
+    height:270px;
+    top:8px;
+    padding:14px;
+    border-radius:22px;
+  }
+
+  .showcase-main img{
+    height:68%;
+  }
+
+  .showcase-info{
+    left:17px;
+    right:17px;
+    bottom:15px;
+  }
+
+  .showcase-info small{
+    font-size:10px;
+  }
+
+  .showcase-info strong{
+    font-size:17px;
+  }
+
+  .showcase-info span{
+    font-size:19px;
+  }
+
+  .showcase-mini{
+    width:92px;
+    padding:7px;
+    border-radius:14px;
+  }
+
+  .showcase-mini img{
+    height:60px;
+  }
+
+  .showcase-mini span{
+    font-size:9px;
+  }
+
+  .title-row{
+    gap:6px;
+  }
+
+  .title-row h1{
+    font-size:31px;
+  }
+
+  .title-row strong{
+    font-size:12px;
+  }
+
+  .grid{
+    grid-template-columns:1fr 1fr;
+    gap:9px;
+  }
+
+  .card{
+    border-radius:17px;
+  }
+
+  .img-wrap{
+    height:154px;
+  }
+
+  .content{
+    min-height:224px;
+    padding:11px;
+  }
+
+  .content h3{
+    min-height:39px;
+    font-size:12.5px;
+  }
+
+  .content ul{
+    min-height:74px;
+    font-size:9.5px;
+  }
+
+  .price{
+    font-size:19px;
+  }
+
+  .buy{
+    min-height:42px;
+    padding:8px 6px;
+    font-size:8.8px;
+    line-height:1.25;
+  }
+
+  .tag{
+    max-width:calc(100% - 18px);
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+
+  .footer-inner img{
+    width:220px;
+    height:58px;
+  }
+
+  .footer-inner strong{
+    font-size:13px;
+  }
+}
+
+/* Telas muito estreitas */
+@media(max-width:360px){
+  .hero-v2-copy h1{
+    font-size:35px;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .img-wrap{
+    height:230px;
+  }
+
+  .content{
+    min-height:auto;
+  }
+
+  .content h3,
+  .content ul{
+    min-height:auto;
+  }
+
+  .buy{
+    font-size:10px;
+  }
+}
