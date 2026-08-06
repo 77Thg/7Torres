@@ -450,7 +450,6 @@ footer{
 @media(max-width:720px){.hero-v2{padding:30px 0 44px}.hero-v2-copy h1{font-size:48px}.hero-v2-copy p{font-size:16px}.hero-v2-actions a{flex:1;text-align:center}.hero-v2-showcase{min-height:365px}.showcase-main{width:82%;height:320px}.showcase-mini{width:118px}.showcase-mini img{height:82px}}
 @media(max-width:430px){.hero-v2-copy h1{font-size:40px}.hero-v2-showcase{min-height:315px}.showcase-main{width:88%;height:280px}.showcase-mini{width:100px}.showcase-mini img{height:68px}}
 
-
 /* ============================
    7TORRES V2 — DIA 2
    CARDS DE PRODUTO PREMIUM
@@ -721,7 +720,6 @@ footer{
     font-size:8px;
   }
 }
-
 
 /* ============================
    7TORRES V2 — DIA 3
@@ -1114,6 +1112,406 @@ footer{
   }
 
   .buy{
+    font-size:10px;
+  }
+}
+
+/* ============================
+   7TORRES V2 — DIA 4
+   ORGANIZAÇÃO VISUAL E ACABAMENTO
+   ============================ */
+
+:root{
+  --premium-gold:#d6ad5d;
+  --premium-gold-soft:#ebce8a;
+  --premium-border:rgba(255,255,255,.085);
+  --premium-surface:#0c0c0c;
+  --premium-muted:#9b968f;
+}
+
+body{
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+}
+
+main#catalogo{
+  scroll-margin-top:150px;
+}
+
+.filters{
+  box-shadow:0 10px 28px rgba(0,0,0,.18);
+}
+
+.filters .container{
+  justify-content:center;
+}
+
+.filters button{
+  position:relative;
+  font-weight:700;
+  letter-spacing:.05px;
+}
+
+.filters button.active{
+  background:linear-gradient(180deg,rgba(214,173,93,.14),rgba(214,173,93,.05));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.04);
+}
+
+.filters button.active:after{
+  content:"";
+  position:absolute;
+  left:22%;
+  right:22%;
+  bottom:-10px;
+  height:2px;
+  border-radius:99px;
+  background:linear-gradient(90deg,transparent,var(--premium-gold),transparent);
+}
+
+.catalog-heading{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:30px;
+  margin-bottom:30px;
+  padding-bottom:22px;
+  border-bottom:1px solid var(--premium-border);
+}
+
+.catalog-heading-copy{
+  max-width:720px;
+}
+
+.catalog-kicker{
+  display:inline-block;
+  margin-bottom:8px;
+  color:var(--premium-gold-soft);
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:2.2px;
+}
+
+.catalog-heading h1{
+  margin:0;
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:46px;
+  line-height:1.08;
+  letter-spacing:-.8px;
+}
+
+.catalog-heading p{
+  margin:12px 0 0;
+  color:var(--premium-muted);
+  font-size:14px;
+  line-height:1.65;
+}
+
+.catalog-heading-meta{
+  min-width:210px;
+  padding:15px 17px;
+  border:1px solid var(--premium-border);
+  border-radius:16px;
+  background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,.01));
+  text-align:right;
+}
+
+.catalog-heading-meta span{
+  display:block;
+  color:var(--premium-gold-soft);
+  font-size:20px;
+  font-weight:900;
+}
+
+.catalog-heading-meta small{
+  display:block;
+  margin-top:5px;
+  color:#7f7b75;
+  font-size:10px;
+  line-height:1.45;
+}
+
+.empty-state{
+  margin:34px 0;
+  padding:42px 24px;
+  border:1px dashed rgba(214,173,93,.28);
+  border-radius:22px;
+  background:rgba(214,173,93,.025);
+  text-align:center;
+}
+
+.empty-state strong{
+  display:block;
+  color:#efe9de;
+  font-size:20px;
+}
+
+.empty-state span{
+  display:block;
+  margin-top:8px;
+  color:#908b84;
+  font-size:13px;
+}
+
+.footer-v2{
+  margin-top:0;
+  padding:44px 0 0;
+  border-top:1px solid var(--premium-border);
+  background:
+    radial-gradient(circle at 15% 0%,rgba(214,173,93,.06),transparent 28%),
+    #070707;
+}
+
+.footer-v2-grid{
+  display:grid;
+  grid-template-columns:1.35fr .8fr .8fr;
+  gap:50px;
+  align-items:start;
+  padding-bottom:34px;
+}
+
+.footer-brand img{
+  width:270px;
+  height:72px;
+  object-fit:contain;
+  object-position:left center;
+}
+
+.footer-brand p{
+  max-width:430px;
+  margin:14px 0 0;
+  color:#8f8a83;
+  font-size:13px;
+  line-height:1.65;
+}
+
+.footer-nav,
+.footer-contact{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.footer-nav strong,
+.footer-contact strong{
+  margin-bottom:4px;
+  color:#e7dfd0;
+  font-size:13px;
+}
+
+.footer-nav a,
+.footer-contact a,
+.footer-contact span{
+  color:#8f8a83;
+  font-size:12px;
+  transition:.2s;
+}
+
+.footer-nav a:hover,
+.footer-contact a:hover{
+  color:var(--premium-gold-soft);
+}
+
+.footer-bottom{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  padding:18px 0 22px;
+  border-top:1px solid rgba(255,255,255,.06);
+  color:#6f6b65;
+  font-size:11px;
+}
+
+.footer-bottom a{
+  color:#9d968b;
+}
+
+.footer-bottom a:hover{
+  color:var(--premium-gold-soft);
+}
+
+@media(max-width:900px){
+  .filters .container{
+    justify-content:flex-start;
+  }
+
+  .catalog-heading{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .catalog-heading-meta{
+    min-width:0;
+    width:100%;
+    text-align:left;
+  }
+
+  .footer-v2-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .footer-brand{
+    grid-column:1/-1;
+  }
+}
+
+@media(max-width:600px){
+  .catalog-heading{
+    gap:16px;
+    margin-bottom:20px;
+    padding-bottom:18px;
+  }
+
+  .catalog-heading h1{
+    font-size:32px;
+  }
+
+  .catalog-heading p{
+    font-size:12px;
+  }
+
+  .catalog-heading-meta{
+    padding:12px 14px;
+  }
+
+  .catalog-heading-meta span{
+    font-size:17px;
+  }
+
+  .footer-v2{
+    padding-top:34px;
+  }
+
+  .footer-v2-grid{
+    grid-template-columns:1fr;
+    gap:28px;
+    padding-bottom:28px;
+  }
+
+  .footer-brand{
+    grid-column:auto;
+  }
+
+  .footer-brand img{
+    width:220px;
+    height:58px;
+  }
+
+  .footer-bottom{
+    flex-direction:column;
+    align-items:flex-start;
+    padding-bottom:92px;
+  }
+}
+
+/* ============================
+   7TORRES V2 — DIA 5
+   REVISÃO FINAL, PERFORMANCE E ACESSIBILIDADE
+   ============================ */
+
+::selection{
+  background:rgba(214,173,93,.28);
+  color:#fff;
+}
+
+a,button,input{
+  -webkit-tap-highlight-color:transparent;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible{
+  outline:2px solid #e0bb6a;
+  outline-offset:3px;
+}
+
+img{
+  max-width:100%;
+}
+
+.card,
+.hero-v2,
+.top,
+.filters,
+.footer-v2{
+  contain:layout paint;
+}
+
+.trust-strip{
+  border-top:1px solid rgba(255,255,255,.06);
+  border-bottom:1px solid rgba(255,255,255,.06);
+  background:
+    linear-gradient(180deg,rgba(214,173,93,.035),rgba(214,173,93,.01)),
+    #090909;
+}
+
+.trust-strip-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1px;
+}
+
+.trust-strip-grid > div{
+  padding:24px 26px;
+  border-right:1px solid rgba(255,255,255,.06);
+}
+
+.trust-strip-grid > div:last-child{
+  border-right:0;
+}
+
+.trust-strip strong{
+  display:block;
+  color:#e8dfcf;
+  font-size:13px;
+}
+
+.trust-strip span{
+  display:block;
+  margin-top:6px;
+  color:#88837c;
+  font-size:11px;
+}
+
+html{
+  scroll-padding-top:150px;
+}
+
+@media (prefers-reduced-motion: reduce){
+  *,
+  *::before,
+  *::after{
+    scroll-behavior:auto !important;
+    animation-duration:.001ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.001ms !important;
+  }
+}
+
+@media(max-width:900px){
+  .trust-strip-grid{
+    grid-template-columns:1fr;
+  }
+
+  .trust-strip-grid > div{
+    border-right:0;
+    border-bottom:1px solid rgba(255,255,255,.06);
+  }
+
+  .trust-strip-grid > div:last-child{
+    border-bottom:0;
+  }
+}
+
+@media(max-width:600px){
+  .trust-strip-grid > div{
+    padding:18px 16px;
+  }
+
+  .trust-strip strong{
+    font-size:12px;
+  }
+
+  .trust-strip span{
     font-size:10px;
   }
 }

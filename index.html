@@ -4,14 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>7Torres | Produtos Diversos</title>
-<meta name="description" content="Catálogo online da 7Torres com atendimento direto pelo WhatsApp.">
+<meta name="description" content="Conheça os produtos da 7Torres: tecnologia, utilidades, acessórios, energia, áudio, iluminação e muito mais. Atendimento direto pelo WhatsApp.">
+<meta name="theme-color" content="#070707">
+<meta property="og:title" content="7Torres | Produtos variados">
+<meta property="og:description" content="Tecnologia, utilidades e acessórios com atendimento direto pelo WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://7-torres.vercel.app/">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="topo">
 <header class="top">
   <div class="container top-inner">
-    <img class="logo" src="imagens/logo-7torres.png" alt="7Torres">
-    <input id="search" type="search" placeholder="Buscar produtos...">
+    <img loading="lazy" decoding="async" class="logo" src="imagens/logo-7torres.png" alt="7Torres">
+    <input id="search" type="search" aria-label="Buscar produtos" placeholder="Buscar produtos...">
     <a class="contact" href="https://wa.me/5561993580318" target="_blank" rel="noopener">61 99358-0318</a>
   </div>
 </header>
@@ -47,7 +52,7 @@
     <div class="hero-v2-showcase">
       <div class="showcase-main">
         <span class="showcase-label">DESTAQUE</span>
-        <img src="imagens/power-bank-20000mah.png" alt="Power Bank 20.000mAh">
+        <img loading="eager" decoding="async" fetchpriority="high" src="imagens/power-bank-20000mah.png" alt="Power Bank 20.000mAh">
         <div class="showcase-info">
           <small>Energia para o dia todo</small>
           <strong>Power Bank 20.000mAh</strong>
@@ -55,11 +60,11 @@
         </div>
       </div>
       <div class="showcase-mini mini-one">
-        <img src="imagens/lanterna-led-9cm-ima.png" alt="Lanterna LED 9cm">
+        <img loading="lazy" decoding="async" src="imagens/lanterna-led-9cm-ima.png" alt="Lanterna LED 9cm">
         <span>Lanterna LED</span>
       </div>
       <div class="showcase-mini mini-two">
-        <img src="imagens/cabo-reforcado-usbc-1m.png" alt="Cabo USB-C reforçado">
+        <img loading="lazy" decoding="async" src="imagens/cabo-reforcado-usbc-1m.png" alt="Cabo USB-C reforçado">
         <span>Cabo USB-C</span>
       </div>
     </div>
@@ -68,13 +73,16 @@
 
 
 <main class="container" id="catalogo" id="catalogo">
-  <div class="title-row">
-    <div>
-      <span>CATÁLOGO 7TORRES</span>
+  <div class="catalog-heading">
+    <div class="catalog-heading-copy">
+      <span class="catalog-kicker">CATÁLOGO 7TORRES</span>
       <h1>Nossos produtos</h1>
-      <p class="catalog-subtitle">Encontre o item ideal para sua necessidade.</p>
+      <p>Explore as categorias, pesquise pelo nome e escolha o produto ideal.</p>
     </div>
-    <strong id="count"></strong>
+    <div class="catalog-heading-meta">
+      <span id="count"></span>
+      <small>Atendimento direto pelo WhatsApp</small>
+    </div>
   </div>
 
   <section class="grid">
@@ -254,15 +262,44 @@
 <a class="buy" target="_blank" rel="noopener" href="https://wa.me/5561993580318?text=Ol%C3%A1%2C%207Torres%21%20Tenho%20interesse%20no%20produto%20Lanterna%20LED%20Recarreg%C3%A1vel%209cm%20com%20%C3%8Dm%C3%A3%20por%20R%24%2034%2C99.%20Est%C3%A1%20dispon%C3%ADvel%3F">Comprar pelo WhatsApp</a></div></article>
 </section>
 
-  <p id="empty" hidden>Nenhum produto encontrado.</p>
+  <div id="empty" class="empty-state" hidden><strong>Nenhum produto encontrado</strong><span>Tente outro nome ou selecione outra categoria.</span></div>
 </main>
 
-<a class="float" href="https://wa.me/5561993580318" target="_blank" rel="noopener">WhatsApp</a>
+<a class="float" aria-label="Falar com a 7Torres pelo WhatsApp" href="https://wa.me/5561993580318" target="_blank" rel="noopener">WhatsApp</a>
 
-<footer>
-  <div class="container footer-inner">
-    <img src="imagens/logo-7torres.png" alt="7Torres">
-    <strong>WhatsApp: 61 99358-0318</strong>
+
+<section class="trust-strip">
+  <div class="container trust-strip-grid">
+    <div><strong>Compra simples</strong><span>Sem cadastro e sem complicação</span></div>
+    <div><strong>Atendimento direto</strong><span>Converse pelo WhatsApp</span></div>
+    <div><strong>Produtos selecionados</strong><span>Escolhas úteis para o dia a dia</span></div>
+  </div>
+</section>
+
+<footer class="footer-v2">
+  <div class="container footer-v2-grid">
+    <div class="footer-brand">
+      <img loading="lazy" decoding="async" src="imagens/logo-7torres.png" alt="7Torres">
+      <p>Produtos variados, atendimento direto e compra simples pelo WhatsApp.</p>
+    </div>
+
+    <div class="footer-nav">
+      <strong>Navegação</strong>
+      <a href="#catalogo">Todos os produtos</a>
+      <a href="#search">Buscar produto</a>
+      <a href="https://wa.me/5561993580318" target="_blank" rel="noopener">Falar no WhatsApp</a>
+    </div>
+
+    <div class="footer-contact">
+      <strong>Atendimento</strong>
+      <span>WhatsApp</span>
+      <a href="https://wa.me/5561993580318" target="_blank" rel="noopener">61 99358-0318</a>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <span>© 2026 7Torres. Todos os direitos reservados.</span>
+    <a href="#topo">Voltar ao topo</a>
   </div>
 </footer>
 
