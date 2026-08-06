@@ -1515,3 +1515,95 @@ html{
     font-size:10px;
   }
 }
+
+
+/* ============================
+   TESTE — MAIOR DESTAQUE À LOGO
+   ============================ */
+
+.top{
+  position:sticky;
+  top:0;
+  z-index:50;
+  min-height:84px;
+  background:
+    radial-gradient(circle at 12% 50%,rgba(218,177,93,.12),transparent 22%),
+    rgba(5,5,5,.96);
+  border-bottom:1px solid rgba(218,177,93,.34);
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.34),
+    inset 0 -1px 0 rgba(218,177,93,.08);
+}
+
+.top:after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:-1px;
+  height:1px;
+  background:linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(218,177,93,.18) 10%,
+    rgba(235,206,138,.78) 28%,
+    rgba(218,177,93,.32) 52%,
+    transparent 100%
+  );
+  pointer-events:none;
+}
+
+.top-inner{
+  min-height:84px;
+  gap:24px;
+}
+
+.logo{
+  width:410px;
+  height:76px;
+  object-fit:contain;
+  object-position:left center;
+  filter:
+    drop-shadow(0 0 8px rgba(218,177,93,.18))
+    drop-shadow(0 7px 18px rgba(0,0,0,.55));
+  transition:
+    transform .24s ease,
+    filter .24s ease;
+}
+
+.logo:hover{
+  transform:scale(1.015);
+  filter:
+    drop-shadow(0 0 12px rgba(218,177,93,.28))
+    drop-shadow(0 9px 22px rgba(0,0,0,.62));
+}
+
+@media(max-width:900px){
+  .top{
+    min-height:76px;
+  }
+
+  .top-inner{
+    min-height:76px;
+  }
+
+  .logo{
+    width:285px;
+    height:62px;
+  }
+}
+
+@media(max-width:600px){
+  .top{
+    min-height:auto;
+  }
+
+  .top-inner{
+    min-height:auto;
+  }
+
+  .logo{
+    width:235px;
+    height:58px;
+  }
+}
